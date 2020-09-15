@@ -1,0 +1,4 @@
+FROM adoptopenjdk/openjdk11:alpine-jre
+VOLUME /tmp
+ADD target/football-game-0.0.1-SNAPSHOT.jar football.jar
+ENTRYPOINT ["java" , "-jar", "football.jar"]
